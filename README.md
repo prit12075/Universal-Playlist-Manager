@@ -1,76 +1,59 @@
-# 🎵 Universal Playlist Manager
+# 🎵 Neon Playlist Manager (DSA Visualizer)
 
-A **Doubly Linked List** implementation in C++ that simulates a music playlist.
-This project demonstrates mastery of dynamic memory management, pointer manipulation, and algorithmic efficiency.
+A **Doubly Linked List** visualization built with **HTML5, CSS3, and JavaScript**.
+This project transforms abstract Data Structures into an interactive, animated "Cyberpunk" styled interface, allowing users to see exactly how memory and pointers work in real-time.
 
 ## 🚀 Features
-- **Dynamic Insertion:** Add songs to the end (Queue behavior) or the beginning (Priority/Stack behavior).
-- **Bi-Directional Traversal:** Navigate the playlist forward and backward.
-- **Manipulation:** Remove songs by value and reverse the entire playlist.
-- **Cycle Detection:** Implements **Floyd’s Cycle-Finding Algorithm** to detect infinite loops.
-- **Generic Design:** Uses C++ Templates (`template <typename T>`) to handle any data type (Songs, IDs, etc.).
+- **Visual Memory Management:** Nodes are displayed as cards with simulated memory addresses (e.g., `0x4A1`).
+- **Interactive Operations:**
+  - **Insert Head/Tail:** Dynamically adds nodes with "Pop-in" animations.
+  - **Delete:** Removes nodes and updates pointers instantly.
+  - **Reverse:** Visualizes the classic algorithmic reversal of a Doubly Linked List.
+- **Glassmorphism UI:** Modern, translucent design using CSS backdrop filters.
+- **Pointer Visualization:** Arrows indicate the `next` and `prev` links between nodes.
 
 ---
 
-## 🛠️ Data Structures & Complexity
-| Operation | Algorithm Used | Time Complexity | Space Complexity |
-|-----------|----------------|-----------------|------------------|
-| **Insert Head/Tail** | Pointer Manipulation | $O(1)$ | $O(1)$ |
-| **Search/Delete** | Linear Search | $O(N)$ | $O(1)$ |
-| **Reverse** | Iterative Swap | $O(N)$ | $O(1)$ |
-| **Cycle Detect** | Floyd's (Tortoise & Hare) | $O(N)$ | $O(1)$ |
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3 (Flexbox, Animations, Variables)
+- **Logic:** JavaScript (ES6+ Classes)
+- **Icons:** FontAwesome
+
+---
+
+## 🧠 Data Structures & Complexity
+Even though this is a web app, the underlying logic follows strict DSA principles.
+
+| Operation | Algorithm Used | Time Complexity |
+|-----------|----------------|-----------------|
+| **Insert Head/Tail** | Pointer Manipulation | $O(1)$ |
+| **Delete Head** | Pointer Update | $O(1)$ |
+| **Reverse** | Iterative Swap | $O(N)$ |
+| **DOM Rendering** | Linear Traversal | $O(N)$ |
 
 ---
 
 ## 💻 How to Run
-### Prerequisites
-- A C++ Compiler (g++, clang, or MSVC)
+### Option 1: Local Execution
+1. Download the repository.
+2. Locate `index.html`.
+3. Double-click to open it in any modern web browser (Chrome, Safari, Edge).
 
-### Compilation & Execution
-**For Mac/Linux:**
-```bash
-g++ main.cpp -o playlist
-./playlist
+### Option 2: Live Demo (GitHub Pages)
+*(You can enable this in your repo settings!)*
+[Link to your Live Project]
 
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-1. Add Song (to End)
-2. Add Priority Song (to Start)
-3. Remove Song
-4. Show Playlist (Forward)
-5. Show Playlist (Backward)
-6. Reverse Playlist
-7. Check for Infinite Loop (Cycle)
-0. Exit
-Enter choice: 1
-Enter song name: Blinding Lights
+---
 
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 1
-Enter song name: Levitating
+## 📸 Project Preview
+The interface features a "Neon/Night" theme where:
+1.  **Nodes** hold the Song Name and a Hexadecimal Address.
+2.  **Arrows** represent the `next` and `prev` pointers.
+3.  **The Console** at the bottom logs operations (e.g., *"> Inserted 'Levitating' at Tail"*).
 
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 2
-Enter song name: Bohemian Rhapsody
-(Added as priority!)
+---
 
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 4
-Playlist (Start -> End): [Bohemian Rhapsody] <-> [Blinding Lights] <-> [Levitating] <-> NULL
-
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 6
-Playlist reversed successfully!
-
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 4
-Playlist (Start -> End): [Levitating] <-> [Blinding Lights] <-> [Bohemian Rhapsody] <-> NULL
-
---- 🎵 LINKED LIST MUSIC PLAYER 🎵 ---
-... [Menu options] ...
-Enter choice: 7
-No Cycle. Linear Playlist.
+## 👨‍💻 Author
+**Preet Patel**
+* Computer Science Engineering Student
+* SRM University AP
