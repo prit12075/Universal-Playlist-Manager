@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Playlist Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-music"></i> Sonic Linked List</h1>
+            <p>Doubly Linked List Visualization</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="songInput" placeholder="Enter Song Name...">
+            <div class="button-group">
+                <button onclick="addHead()" class="btn btn-head"><i class="fa-solid fa-arrow-left"></i> Add Head</button>
+                <button onclick="addTail()" class="btn btn-tail">Add Tail <i class="fa-solid fa-arrow-right"></i></button>
+                <button onclick="removeHead()" class="btn btn-del">Del Head</button>
+                <button onclick="reverseList()" class="btn btn-rev"><i class="fa-solid fa-rotate"></i> Reverse</button>
+            </div>
+        </div>
+
+        <div class="playlist-track">
+            <div class="null-indicator">NULL</div>
+            <div id="list-container" class="nodes-wrapper">
+                </div>
+            <div class="null-indicator">NULL</div>
+        </div>
+
+        <div class="console-log" id="statusLog">System Ready...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
